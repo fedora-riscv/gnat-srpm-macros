@@ -1,0 +1,49 @@
+Name:           gnat-srpm-macros
+Version:        1
+Release:        1%{?dist}
+Summary:        RPM macros needed when source packages that need GNAT are built
+Summary(sv):    RPM-makron som behövs när källkodspaket som behöver GNAT byggs
+
+Group:          Development/Libraries
+License:        MIT
+URL:            http://pkgs.fedoraproject.org/cgit/gnat-srpm-macros.git
+Source1:        macros.gnat-srpm
+BuildArch:      noarch
+
+
+%description
+This package contains RPM macros that need to be available when source RPM
+packages that need the GNAT tools are built. It is a standalone package in
+order to have as few dependencies as possible.
+
+%description -l sv
+Det här paketet innehåller RPM-makron som behöver finnas tillgängliga när käll-
+RPM-paket som behöver GNAT-verktygen byggs. Det är ett fristående paket för att
+bero av så få andra paket som möjligt.
+
+
+%global RPM_macro_dir %{_rpmconfigdir}/macros.d
+
+
+%prep
+# nothing to do
+
+
+%build
+# nothing to do
+
+
+%install
+mkdir -p %{buildroot}/%{RPM_macro_dir}
+install -p -m 0644 -t %{buildroot}/%{RPM_macro_dir} %{SOURCE1}
+
+
+%files
+%{RPM_macro_dir}/*
+
+
+%changelog
+* Sun Sep 14 2014 Björn Persson <bjorn@rombobjörn.se> - 1-1
+- Separated GNAT_arches from redhat-rpm-config.
+- Introduced GPRbuild_arches, excluding ARM.
+- Added ppc64p7 to synchronize with the GCC package.

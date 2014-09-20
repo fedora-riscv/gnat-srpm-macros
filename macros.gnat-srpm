@@ -1,0 +1,15 @@
+%GNAT_arches %{GPRbuild_arches} %{arm}
+# GNAT_arches lists the architectures where GNAT is available in Fedora. Ada
+# packages won't build on other architectures until GNAT is bootstrapped for
+# them.
+
+%GPRbuild_arches %{ix86} x86_64 ia64 ppc ppc64 ppc64p7 alpha aarch64
+# GPRbuild_arches lists the architectures where GPRbuild is available in Fedora.
+# If an architecture is included in GNAT_arches but not in GPRbuild_arches, then
+# it's because GPRbuild has some problem with that architecture. Packages that
+# are built with GPRbuild won't build on that architecture until the problem is
+# solved, unless they can be built with Gnatmake instead.
+
+# Currently GPRbuild is broken on ARM because of a target string mismatch:
+# https://lists.fedoraproject.org/pipermail/devel/2014-June/200040.html
+# https://lists.fedoraproject.org/pipermail/ada/2014/000029.html
