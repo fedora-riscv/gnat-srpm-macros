@@ -1,4 +1,4 @@
-%GNAT_arches %{GPRbuild_arches}
+%GNAT_arches %{GPRbuild_arches} ppc64le s390x
 # GNAT_arches lists the architectures where GNAT is available in Fedora. Ada
 # packages won't build on other architectures until GNAT is bootstrapped for
 # them.
