@@ -1,5 +1,5 @@
 Name:           gnat-srpm-macros
-Version:        3
+Version:        4
 Release:        1%{?dist}
 Summary:        RPM macros needed when source packages that need GNAT are built
 Summary(sv):    RPM-makron som behövs när källkodspaket som behöver GNAT byggs
@@ -43,6 +43,10 @@ install -p -m 0644 -t %{buildroot}/%{RPM_macro_dir} %{SOURCE1}
 
 
 %changelog
+* Mon Mar 28 2016 Björn Persson <Bjorn@Rombobjörn.se> - 4-1
+- GPRbuild is available on s390x and ppc64le.
+- ia64, ppc and alpha are inactive.
+
 * Tue Mar 22 2016 Björn Persson <Bjorn@Rombobjörn.se> - 3-1
 - GNAT has been bootstrapped on s390x and ppc64le.
 
