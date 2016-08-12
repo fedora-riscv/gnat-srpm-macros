@@ -22,9 +22,6 @@ RPM-paket som behöver GNAT-verktygen byggs. Det är ett fristående paket för 
 bero av så få andra paket som möjligt.
 
 
-%global RPM_macro_dir %{_rpmconfigdir}/macros.d
-
-
 %prep
 # nothing to do
 
@@ -34,12 +31,12 @@ bero av så få andra paket som möjligt.
 
 
 %install
-mkdir -p %{buildroot}/%{RPM_macro_dir}
-install -p -m 0644 -t %{buildroot}/%{RPM_macro_dir} %{SOURCE1}
+mkdir -p %{buildroot}/%{rpmmacrodir}
+install -p -m 0644 -t %{buildroot}/%{rpmmacrodir} %{SOURCE1}
 
 
 %files
-%{RPM_macro_dir}/*
+%{rpmmacrodir}/*
 
 
 %changelog
