@@ -11,3 +11,6 @@
 # If an architecture is included in GNAT_arches but not in GPRbuild_arches, then
 # either GPRbuild hasn't been bootstrapped for that architecture, or there might
 # be some architecture-specific problem.
+
+# x86 is excluded from GPRbuild_arches because of
+# https://bugzilla.redhat.com/show_bug.cgi?id=1444614
