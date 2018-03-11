@@ -4,9 +4,8 @@ Release:        5%{?dist}
 Summary:        RPM macros needed when source packages that need GNAT are built
 Summary(sv):    RPM-makron som behövs när källkodspaket som behöver GNAT byggs
 
-Group:          Development/Libraries
 License:        MIT
-URL:            http://pkgs.fedoraproject.org/cgit/gnat-srpm-macros.git
+URL:            https://src.fedoraproject.org/rpms/gnat-srpm-macros
 Source1:        macros.gnat-srpm
 BuildArch:      noarch
 
