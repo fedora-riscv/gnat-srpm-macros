@@ -1,6 +1,6 @@
 Name:           gnat-srpm-macros
 Version:        4
-Release:        6%{?dist}
+Release:        7%{?dist}
 Summary:        RPM macros needed when source packages that need GNAT are built
 Summary(sv):    RPM-makron som behövs när källkodspaket som behöver GNAT byggs
 
@@ -39,6 +39,9 @@ install -p -m 0644 -t %{buildroot}/%{rpmmacrodir} %{SOURCE1}
 
 
 %changelog
+* Thu Jan 31 2019 Fedora Release Engineering <releng@fedoraproject.org> - 4-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
+
 * Fri Jul 13 2018 Fedora Release Engineering <releng@fedoraproject.org> - 4-6
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
 
