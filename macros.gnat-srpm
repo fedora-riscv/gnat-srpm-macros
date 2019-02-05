@@ -6,11 +6,11 @@
 # Fedora, it seems appropriate to keep this list in agreement with the one in
 # gcc.spec.)
 
-%GPRbuild_arches  x86_64 ppc64 ppc64p7 ppc64le s390x %{arm} aarch64
+%GPRbuild_arches  x86_64 ppc64 ppc64p7 s390x %{arm} aarch64 %{ix86}
 # GPRbuild_arches lists the architectures where GPRbuild is available in Fedora.
 # If an architecture is included in GNAT_arches but not in GPRbuild_arches, then
 # either GPRbuild hasn't been bootstrapped for that architecture, or there might
 # be some architecture-specific problem.
-
-# x86 is excluded from GPRbuild_arches because of
-# https://bugzilla.redhat.com/show_bug.cgi?id=1444614
+#
+# ppc64le is temporary excluded from GPRBuild_arches. linked scheme should be 
+# adjusted 

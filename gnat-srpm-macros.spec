@@ -39,6 +39,9 @@ install -p -m 0644 -t %{buildroot}/%{rpmmacrodir} %{SOURCE1}
 
 
 %changelog
+* Tue Feb  5 2019 Pavel Zhukov <pzhukov@redhat.com> - 4-7
+- Add back ix86 arch and temporary disable ppc64
+
 * Thu Jan 31 2019 Fedora Release Engineering <releng@fedoraproject.org> - 4-7
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
 
