@@ -1,6 +1,6 @@
 Name:           gnat-srpm-macros
 Version:        4
-Release:        8%{?dist}
+Release:        9%{?dist}
 Summary:        RPM macros needed when source packages that need GNAT are built
 Summary(sv):    RPM-makron som behövs när källkodspaket som behöver GNAT byggs
 
@@ -39,6 +39,9 @@ install -p -m 0644 -t %{buildroot}/%{rpmmacrodir} %{SOURCE1}
 
 
 %changelog
+* Wed Feb  6 2019 Pavel Zhukov <pzhukov@redhat.com> - 4-9
+- Add back ppc64le
+
 * Tue Feb  5 2019 Pavel Zhukov <pzhukov@redhat.com> - 4-8
 - Add back ix86 arch and temporary disable ppc64
 
