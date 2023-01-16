@@ -1,3 +1,8 @@
+# Copyright 2011 - 2023 B. Persson, Bjorn@Rombobeorn.se
+# Copying and distribution of this file, with or without modification, are
+# permitted in any medium without royalty provided the copyright notice and
+# this notice are preserved. This file is offered as-is, without any warranty.
+
 %GNAT_arches %{GPRbuild_arches} ia64 ppc alpha %{arm} riscv64
 # GNAT_arches lists the architectures where GNAT is available in Fedora. Ada
 # packages won't build on other architectures until GNAT is bootstrapped for
