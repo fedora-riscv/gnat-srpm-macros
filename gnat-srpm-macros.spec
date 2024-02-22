@@ -1,6 +1,6 @@
 Name:           gnat-srpm-macros
 Version:        6
-Release:        5%{?dist}
+Release:        5.rv64%{?dist}
 Summary:        RPM macros needed when source packages that need GNAT are built
 Summary(sv):    RPM-makron som behövs när källkodspaket som behöver GNAT byggs
 
