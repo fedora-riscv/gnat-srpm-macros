@@ -11,7 +11,7 @@
 # Fedora, it seems appropriate to keep this list in agreement with the one in
 # gcc.spec.)
 
-%GPRbuild_arches %{ix86} x86_64 %{power64} s390x aarch64
+%GPRbuild_arches %{ix86} x86_64 %{power64} s390x aarch64 riscv64
 # GPRbuild_arches lists the architectures where GPRbuild is available in Fedora.
 # If an architecture is included in GNAT_arches but not in GPRbuild_arches, then
 # either GPRbuild hasn't been bootstrapped for that architecture, or there might
